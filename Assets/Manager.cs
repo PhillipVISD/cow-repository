@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Test : MonoBehaviour {
+public class Manager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -12,5 +12,10 @@ public class Test : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	public void LoadLevel(string name)
+	{
+		Application.LoadLevel(name);
 	}
 }
