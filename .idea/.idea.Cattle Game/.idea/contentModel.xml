@@ -4,13 +4,79 @@
     <e p="C:\Users\Phillip\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_Cattle Game.1360519827.00" t="ExcludeRecursive" />
     <e p="C:\Users\Phillip\Documents\Cattle Game" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Manager.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Editor" t="Include">
             <e p="JetBrains" t="Include">
               <e p="Unity3DRider.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Controller.cs" t="Include" />
+          <e p="Conveyor.cs" t="Include" />
+          <e p="Cow.cs" t="Include" />
+          <e p="CowBox.cs" t="Include" />
+          <e p="DropCow.cs" t="Include" />
+          <e p="Dropper.cs" t="Include" />
+          <e p="FillCorn.cs" t="Include" />
+          <e p="GreenZone.cs" t="Include" />
+          <e p="Manager.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
+          <e p="Pointer.cs" t="Include" />
+          <e p="ProcessCow.cs" t="Include" />
+          <e p="StaticData.cs" t="Include" />
+          <e p="Truck.cs" t="Include" />
+        </e>
+        <e p="Standard Assets" t="Include">
+          <e p="CNControls" t="Include">
+            <e p="Editor" t="Include">
+              <e p="AdditionaHelpingGuidance.cs" t="Include" />
+              <e p="ErrorPopupWindow.cs" t="Include" />
+            </e>
+            <e p="Examples" t="Include">
+              <e p="Scenes" t="Include">
+                <e p="2D" t="Include">
+                  <e p="Scripts" t="Include">
+                    <e p="Camera2DFollow.cs" t="Include" />
+                    <e p="Platformer2DUserControl.cs" t="Include" />
+                    <e p="PlatformerCharacter2D.cs" t="Include" />
+                    <e p="Restarter.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="Custom Joystick" t="Include">
+                  <e p="FourWayController.cs" t="Include" />
+                </e>
+                <e p="Third Person" t="Include">
+                  <e p="AbstractTargetFollower.cs" t="Include" />
+                  <e p="AutoCam.cs" t="Include" />
+                  <e p="PivotBasedCameraRig.cs" t="Include" />
+                  <e p="ThidPersonExampleController.cs" t="Include" />
+                </e>
+                <e p="Touchpad Camera" t="Include">
+                  <e p="RotateCamera.cs" t="Include" />
+                  <e p="RotationConstraint.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="CnInputSystem" t="Include">
+                <e p="CnInputManager.cs" t="Include" />
+                <e p="VirtualAxis.cs" t="Include" />
+                <e p="VirtualButton.cs" t="Include" />
+              </e>
+              <e p="Controllers" t="Include">
+                <e p="CommonOnScreenControl.cs" t="Include" />
+                <e p="Dpad.cs" t="Include" />
+                <e p="DpadAxis.cs" t="Include" />
+                <e p="SensitiveJoystick.cs" t="Include" />
+                <e p="SimpleButton.cs" t="Include" />
+                <e p="SimpleJoystick.cs" t="Include" />
+                <e p="Touchpad.cs" t="Include" />
+              </e>
+              <e p="EmptyGraphic.cs" t="Include" />
             </e>
           </e>
         </e>
