@@ -9,20 +9,21 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1930912499061176}
+  m_RootGameObject: {fileID: 1456179451511476}
   m_IsPrefabParent: 1
---- !u!1 &1930912499061176
+--- !u!1 &1456179451511476
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4696085517550070}
-  - component: {fileID: 212251086292822382}
-  - component: {fileID: 60559509173172266}
-  - component: {fileID: 50391775759533180}
-  - component: {fileID: 114887566033697108}
+  - component: {fileID: 4372860138496550}
+  - component: {fileID: 212216023208129470}
+  - component: {fileID: 60632790299477548}
+  - component: {fileID: 50083039318088232}
+  - component: {fileID: 114632756275558160}
+  - component: {fileID: 95580886287179950}
   m_Layer: 0
   m_Name: Cow
   m_TagString: Untagged
@@ -30,26 +31,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4696085517550070
+--- !u!4 &4372860138496550
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1930912499061176}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_GameObject: {fileID: 1456179451511476}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.13, y: 1.24, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50391775759533180
+--- !u!50 &50083039318088232
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1930912499061176}
+  m_GameObject: {fileID: 1456179451511476}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -63,12 +64,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &60559509173172266
+--- !u!60 &60632790299477548
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1930912499061176}
+  m_GameObject: {fileID: 1456179451511476}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -100,12 +101,29 @@ PolygonCollider2D:
       - {x: 0.085, y: -0.17999999}
       - {x: 0.185, y: -0.22}
       - {x: 0.355, y: -0.22}
---- !u!114 &114887566033697108
+--- !u!95 &95580886287179950
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456179451511476}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 68d4db5f6716a074eb1c2d9f5ab2aceb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114632756275558160
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1930912499061176}
+  m_GameObject: {fileID: 1456179451511476}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b34f1d82e1c0804429b717a1d6eddbd7, type: 3}
@@ -115,12 +133,17 @@ MonoBehaviour:
   speed: 1.35
   inCage: 0
   chasePlayer: 0
---- !u!212 &212251086292822382
+  goodCow: 1
+  lastCow: 0
+  animator: {fileID: 95580886287179950}
+  rigidbody: {fileID: 50083039318088232}
+  collider: {fileID: 60632790299477548}
+--- !u!212 &212216023208129470
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1930912499061176}
+  m_GameObject: {fileID: 1456179451511476}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0

@@ -10,7 +10,24 @@ public static class StaticData
 
 	public static int Cows
 	{
-		get { return cows; }
+		get
+		{
+			if (Application.isEditor && cows == 0)
+			{
+					return 4;
+			}
+			return cows;
+		}
 		set { cows = value; }
+	}
+
+	public static int BadFood { get; set; }
+	public static int GoodFood { get; set; }
+
+	public static void Reset()
+	{
+		Cows = 0;
+		BadFood = 0;
+		GoodFood = 0;
 	}
 }

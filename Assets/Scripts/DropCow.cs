@@ -7,7 +7,7 @@ public class DropCow : MonoBehaviour
 
 	public Transform spawnPoint;
 
-	public Transform cow;
+	public GameObject cow;
 
 	public CowBox cowParent;
 
@@ -29,7 +29,7 @@ public class DropCow : MonoBehaviour
 	{
 		for (int i = 0; i < amountOfCows; i++)
 		{
-			var newObject = Instantiate(cow, 
+			GameObject newObject = Instantiate(cow, 
 				new Vector3(spawnPoint.transform.position.x + i,
 					spawnPoint.transform.position.y,
 					spawnPoint.transform.position.z),

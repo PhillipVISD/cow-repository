@@ -18,7 +18,7 @@ public class Truck : MonoBehaviour
 	void Update () {
 		Vector3 movement = new Vector3(CnInputManager.GetAxis("Vertical") * Time.deltaTime * speed, 0f, 0f);
 		
-		transform.Rotate(Vector3.forward, (CnInputManager.GetAxis("Horizontal") * Time.deltaTime * rotateSpeed));
+		transform.Rotate(Vector3.forward, (CnInputManager.GetAxis("Horizontal") * Time.deltaTime * rotateSpeed * CnInputManager.GetAxis("Vertical")));
 		
 		transform.Translate(movement);
 	}
