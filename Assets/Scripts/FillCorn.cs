@@ -6,7 +6,10 @@ using UnityEngine.SceneManagement;
 public class FillCorn : MonoBehaviour
 {
 
+	public SceneController sceneController;
+
 	public Transform cornParent;
+	private bool canFill = true;
 	
 	// Use this for initialization
 	void Start () {
@@ -20,16 +23,28 @@ public class FillCorn : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.transform.CompareTag("Corn"))
+		if (other.transform.CompareTag("Corn") && canFill)
 		{
 			var renderer = other.transform.GetComponent(typeof(SpriteRenderer)) as SpriteRenderer;
-			renderer.enabled = true;
 
-			if (checkAllCorn())
+			if (!renderer.enabled)
 			{
-				SceneManager.LoadScene("Process");
+				renderer.enabled = true;
+				StartCoroutine(FillDelay(0.5f));
+				
+				if (checkAllCorn())
+				{
+					sceneController.loadScene("Process");
+				}
 			}
 		}
+	}
+
+	IEnumerator FillDelay(float time)
+	{
+		canFill = false;
+		yield return new WaitForSeconds(time);
+		canFill = true;
 	}
 
 	private bool checkAllCorn()

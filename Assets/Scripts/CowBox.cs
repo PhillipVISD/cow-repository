@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CowBox : MonoBehaviour {
+public class CowBox : MonoBehaviour
+{
 
+	public SceneController sceneController;
+	
 	// Use this for initialization
 	void Start () {
 		
@@ -74,6 +77,6 @@ public class CowBox : MonoBehaviour {
 	private void Win()
 	{
 		StaticData.Cows = countCows();
-		SceneManager.LoadScene("Feed");
+		sceneController.loadScene("Feed");
 	}
 }

@@ -16,8 +16,11 @@ public class SpawnCows : MonoBehaviour
 
 		for (int i = 0; i < cows; i++)
 		{
-			Instantiate(cow, new Vector3(spawnpoint.position.x + i, spawnpoint.position.y, spawnpoint.position.z),
+			var newCow = Instantiate(cow, new Vector3(spawnpoint.position.x + i, spawnpoint.position.y, spawnpoint.position.z),
 				Quaternion.identity);
+
+			Cow cowComp = newCow.GetComponent<Cow>();
+			cowComp.wander = true;
 		}
 	}
 	

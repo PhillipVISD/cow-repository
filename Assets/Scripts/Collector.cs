@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class Collector : MonoBehaviour
 {
+
+	public SceneController sceneController;
+	
 	// Use this for initialization
 	void Start () {
 		
@@ -27,7 +30,7 @@ public class Collector : MonoBehaviour
 			if (result.lastFood)
 			{
 //				GameManager.LoadScene("Deliver");
-				GameManager.restart();
+				sceneController.loadScene("Deliver");
 			}
 
 			if (result.goodFood)

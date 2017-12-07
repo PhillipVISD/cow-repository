@@ -15,5 +15,10 @@ namespace DefaultNamespace
             LoadScene("Menu");
             StaticData.Reset();
         }
+
+        public static void win()
+        {
+            LoadScene("Win");
+        }
     }
 }

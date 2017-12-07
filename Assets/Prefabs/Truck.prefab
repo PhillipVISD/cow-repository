@@ -11,23 +11,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1697923456028118}
   m_IsPrefabParent: 1
---- !u!1 &1398675822259838
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4039942652825040}
-  - component: {fileID: 61486651135640100}
-  - component: {fileID: 114657657370045256}
-  m_Layer: 0
-  m_Name: Corn Filler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1697923456028118
 GameObject:
   m_ObjectHideFlags: 0
@@ -42,38 +25,24 @@ GameObject:
   - component: {fileID: 60908060406404000}
   m_Layer: 0
   m_Name: Truck
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4039942652825040
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1398675822259838}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.487, y: 0.377, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4952038182418862}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4952038182418862
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1697923456028118}
-  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: -6.14, y: 0.79, z: -1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.37, y: -3.03, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4039942652825040}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!50 &50570791893304842
 Rigidbody2D:
   serializedVersion: 4
@@ -142,43 +111,6 @@ PolygonCollider2D:
       - {x: -0.14, y: -0.29}
       - {x: -0.11, y: -0.29999998}
       - {x: 0.19, y: -0.29999998}
---- !u!61 &61486651135640100
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1398675822259838}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.25508094, y: 0.12557846}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.9293618, y: 0.43489736}
-  m_EdgeRadius: 0
---- !u!114 &114657657370045256
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1398675822259838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0751ccb1c03f06439f80d0fd0f74eb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cornParent: {fileID: 0}
 --- !u!114 &114823043834238894
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -190,8 +122,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 876eca97b2caf1a4396f5f50915cbd0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  maxSpeed: 8
+  accelerationSpeed: 0.01
+  deceleration: 0.02
   rotateSpeed: -90
+  speed: 0
 --- !u!212 &212280385853170328
 SpriteRenderer:
   m_ObjectHideFlags: 1
